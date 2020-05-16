@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Satisfy&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Scheherazade&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet"> 
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width,initial-scale=1">
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		     <style>
+		     	input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 50%;
+     
+  }
+  #body
+  {
+  	font-family: 'Scheherazade', serif;
+  }
+  #box
+  {
+  	text-align: center;
+  	position: relative;
+  	width: 90%;
+  	height: auto;
+  	border: 2px solid;
+  	padding: 30px;
+  	box-sizing: border-box;;
+  }
+  #box1
+  {
+  	text-align: center;
+  	position: relative;
+  	width: 90%;
+  	height: auto;
+  	border: 2px solid;
+  	padding: 30px;
+  	box-sizing: border-box;
+  	background-color: yellow;
+  	font-family: 'Fredericka the Great', cursive;
+  }
+  #color
+  {
+  	background-color: grey;
+  }
+   #color1
+  {
+  	background-color: black;
+  	text-decoration-color: grey;
+  }
+  #font1
+  {
+  	font-family: 'Satisfy', cursive;
+  }
+  #font2
+  {
+  	font-family: 'Satisfy', cursive;
+font-family: 'Dancing Script', cursive;
+  }
+  #head{
+font-family: 'Niconne', cursive;
+  }
+  #head2
+  {
+  	font-family: 'Tangerine', cursive;
+  }
+  #head3
+  {
+  	font-family: 'Londrina Shadow', cursive;
+  }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+	
+
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+					<img src="image/4.jpeg" width="60px" height="60px" class="mr-2 mt-2 rounded-circle" >
+  <a class="navbar-brand" href="#" id="head"><h3>Dr. Sudhir Chandra Sur Degree Engineering College</h3></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="html1.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Student
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         
+          <a class="dropdown-item" href="holiday.html">List of Holidays</a>
+          
+          <a class="dropdown-item" href="sal.html">Syllabus</a>
+          <a class="dropdown-item" href="feedback.html">Student Feedback Form</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Acadamics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="calender.html">Acadamic calender</a>
+          <a class="dropdown-item" href="notice.html">Notice</a>
+          <a class="dropdown-item" href="aword.html">Acadamic Award</a>
+          <a class="dropdown-item" href="programme.html">Programmes</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="campus.html">Campus life</a>
+          <a class="dropdown-item" href="placement.html">Placement Records</a>
+          <a class="dropdown-item" href="apply.html">How To Apply</a>
+          <a class="dropdown-item" href="ragging.html">Ragging Banned</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/1.png" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="image/2.png" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="image/3.jpeg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+			</header>
+			<script>
+function myFunction() {
+  var w = window.open();
+  w.document.open();
+  w.document.write("<h1>Hello World!</h1>");
+  w.document.close();
+}
+</script>
+
+			<section>
+				<div class="container-fluid">
+					<h1 class="text-center text-capitalize pt-5" id="head3">about us</h1>
+					<hr class="w-50 mx-auto">
+					<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-12">
+							<img src="image/4.jpeg" class="img-fluid mx-auto d-block">
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<h1><b> DSCSDEC</b></h1>
+							<hr>
+							<p class="text-success" id="body"><font size="5px">Dr. Sudhir Chandra Sur Degree Engineering College under the tutelage of JIS Educational Initiatives commenced in the year 2009. This contemporary technological hub is positioned in one of the cardinal locations of North Kolkata in Dum Dum. The Institute provides the finest infrastructural facilities in order to leverage the technological proficiency of the students and make them industry ready. Moreover, Dr. Sudhir Chandra Sur Degree Engineering College believes in establishing firm industry connect to enhance the industry compatibility and employability of the students. The Institute shares illustrious knowledge partnerships with blue-chip companies like Volkswagen Ashok Leyland & Hyundai & Campus Connect with Infosys. DSCSDEC is an active NPTEL Local Chapter.</font></p>
+							<br>
+
+							<big><b> Campus:</b> </big><i>Dr Sudhir Chandra Sur Degree Engineering College</i><br>
+ 							<big><b>Address:</b></big><i> 540 Dum Dum Road, Surermath, (Near Dum Dum Jn. Station),<br>Kolkata-700074 West Bengal</i><br>
+ 							<big><b>Phone:</b></big><i> +91 33 2560 3889 / 2560 3898 (General Enquiry)</i><br>
+ 							<big><b>Phone:</b></big><i> + 8902496652 / 9432011483 / 9073946884 (Admission Enquiry)</i><br>
+ 							<big><b>Email:</b></big><i> info@dsec.ac.in</i><br>
+							<big><b> Website:</b></big><i> www.dsec.ac.in</i><br>
+							<br>
+							<br>
+							<br>
+						
+<section id="box1" class="mx-auto d-block">
+	<h2>Student Login :</h2>
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="bg-primary">Login</button>
+</section>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+										</div>
+					</div>
+				</div>
+
+			</section>
+
+<br>
+<br>
+<br>
+<br>
+
+
+			<section id="box"  class="mx-auto d-block">
+				<div class="container mt-3">
+  <h2 id="head2">Principal</h2>
+  
+  <div class="media border p-3 bg-success text-white">
+    <img src="image/principal.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:120px;">
+    <div class="media-body">
+      <h4> Dr. Om Prakash Sharma</h4>
+      <p id="font2">Dr Sudhir Chandra Sur Degree Engineering College was established in the year 2009 under the aegis of JIS Group of Institutions, covering a land of 12.14 acres with a simple vision – To create a conducive environment where changes & challenges that new technology bring would benefit the society.<br>
+The College follows a unique pedagogy to ensure its students have the opportunity to face the rigours of ever-changing demands of real-world situations in tandem with the industry. It is supplemented with on-going and regular interaction with business and industry leaders providing the students real life platform to assess and experience the application and effective results of what is taught as concepts in their classrooms. The faculties are experts at integrating knowledge with competitive insights and practical application. Their experience is drawn from superior academic backgrounds and their direct experience with a wide variety of organizations. The diversity of our faculty and the supportive learning environment result in a unique, valuable and powerful learning experience.<br>
+The aim of the College has always been to provide an adequately skilled manpower having the appropriate knowledge, skills and attitude for industry, commerce and the public sector. Students become representatives of the College and all that it symbolizes.</p>      
+    </div>
+  </div>
+</div>
+							<br>
+			</section>
+
+
+
+			<section>
+		
+				<div class="container-fluid">
+					<h1 class="text-center text-capitalize pt-5" id="head3">Courses</h1>
+					<hr class="w-20 mx-auto">
+				</div>
+
+
+		<div class="row text-center">
+				<div class="col-lg-4 col-md-4 col-12">
+				<div class="card" style="width:400px">
+  <img class="card-img-top" src="image/cse.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Computer Science Engineering</h4>
+    <p class="card-text">Computer science engineering (CSE) is one of the popular courses among engineering aspirants which focuses on the basic elements of computer programming and networking. Students pursuing computer science courses will gain knowledge of design, implementation and management of information system of both hardware and software. <big>60 seat </big> </p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12">
+		<div class="card" style="width:400px">
+  <img class="card-img-top" src="image/ece.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Electronic and Communication Engineering</h4>
+    <p class="card-text">Electronics and Communications Engineering (ECE) is the application of science and mathematics to practical problems in the field of electronics and communications. Electronics and communications engineers engage in research, design, development and testing of the electronic equipment used in various systems. A degree in ECE is always in high demand.</p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12">
+		<div class="card" style="width:400px">
+  <img class="card-img-top" src="image/ee.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Electric Engineering</h4>
+    <p class="card-text">Electrical engineering, one of the core courses of engineering discipline deals with the study of design, development, and maintenance of electrical systems and their components, ensuring quality, safety, reliability, and sustainability. The course focuses on the manufacturing of electrical equipment used in a number of sectors including construction and building and the production and distribution of power.</p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+
+	</div>
+</section>
+
+
+
+		</section>
+
+
+
+			<section>
+		
+				
+
+
+		<div class="row text-center pt-4 py-5">
+				<div class="col-lg-4 col-md-4 col-12">
+				<div class="card" style="width:400px" style="height: 50%">
+  <img class="card-img-top" src="image/me.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Mechanical Engineering</h4>
+    <p class="card-text">Mechanical engineering is a professional programme which helps students to understand the working mechanisms of heavy tools and machineries.  The branch applies principles of engineering, physics and material science for the design, analysis, manufacturing and maintenance of mechanical systems. The course covers technical areas like distribution of electricity through generators, transformers, transmission lines, lighting and wiring in buildings.</p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12">
+		<div class="card" style="width:400px" style="height: 50%">
+  <img class="card-img-top" src="image/ce.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Civil Engineering</h4>
+    <p class="card-text"> The engineering course deals with planning, designing, constructing, maintaining, and operating infrastructures while protecting the public and environmental health as well as improving existing infrastructure. The course also teaches the development of better infrastructural facilities to sustain an eco-friendly environment.  Courses include a mix of traditional classroom learning, work in laboratories, and fieldwork</p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+		<div class="col-lg-4 col-md-4 col-12">
+		<div class="card" style="width:400px">
+  <img class="card-img-top" src="image/ae.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Automobiles Engineering</h4>
+    <p class="card-text">
+Automobile Engineering or Automotive Engineering is a part of Mechanical Engineering. Through the application of automotive technology, the course offers specialisation in vehicle designing, repairing, testing and assembling. In this programme, one can also learn safety engineering, quality management and control, automotive analytics as well as assembling and installation of various automobiles.</p>
+    <a href="apply.html" class="btn btn-primary">Apply</a>
+  </div>
+</div>
+		</div>
+
+
+	</div>
+</section>
+
+
+
+		
+				<section  id="box" id="color1" class="mx-auto d-block">
+				<div class="container-fluid">
+					<h1 class="text-center text-capitalize pt-5">Founder Message </h1>
+					<hr class="w-50 mx-auto">
+				</div>
+				<div class="row mb-5">
+						<div class="col-lg-6 col-md-6 col-12" ><br>
+							<br>
+							<br><br><br><br>
+							<img src="image/founder.png" class="mx-auto d-block">
+							<h3 class="text-center">Founder, JIS Group</h3>
+						</div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<h1><b> Sardar Jodh Singh</b></h1>
+							<hr>
+							<p id="font2">An inherent desire has a way of becoming a dream and translating that dream into reality gives one an innate sense of happiness and achievement.<br>
+Years ago, whenever I visited my sons in school, I had a growing desire to start an educational initiative and it soon became a vision or a dream. At the dawn of the new millennium, came the opportune moment to realize this dream aided by the urge to give back to the society. Thus was born the JIS Group Educational Initiatives.<br>
+Now it's a proud moment for me and my team, when we see, thousands of students every year leaving the portals of our educational institutions looking ahead confidently to a bright future.<br>
+While establishing each of these institutions, the objective was to give opportunity to students from eastern India a high standard platform to learn and inherit domain skills which are completely career linked.<br>
+This has extended our reach from graduate and postgraduate studies in engineering & technology, computer applications, management studies, medical science, pharmacy, hospitality management, allied health science, diploma & certificate programmes in techno-commercial subjects and many more. In addition, we have also made our foray into quality health care services through our Dental College; which is the first private dental college in West Bengal.<br>
+Our vision is simple - Igniting Minds, Empowering Lives. The journey has just begun. Even my octogenarian physique fills up with invigorating energy for the days ahead. The next two-three years will perceive JIS Group's quantum leap, with several new educational initiatives in the areas of paramedical science, nursing, education, law, automobile engineering and finally the most ambitious project; a medical college with a modern hospital.<br>
+In these twelve years, I learnt a lot from life, and now I am confident that the Group is ready to become an initiative of national significance.<br>
+This dream will not have any boundaries..</p>
+</div>
+</div>
+</section>
+							<br>
+							<br>
+							<section id="box"  class="mx-auto d-block">
+	<div class="container">
+		<h1 class="text-center text-capitalize pt-5" id="head3">Gallray</h1>
+		<hr class="w-25 max-auto pt-5">
+		<div class="row">
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g1.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g2.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g3.png" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g4.gif" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g5.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g6.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g7.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g8.jpg" class="img-fluid">
+				
+			</div>
+			<div class="col-lg-4 col-md-2 col-12 mb-4">
+				<img src="image/g9.jpg" class="img-fluid">
+				
+			</div>
+			
+			
+		</div>
+		
+	</div>
+</section >
+
+			<br>
+			<br>
+			<br>
+
+
+
+
+			<section class=" pt-4 text-white " id="color">
+				<div align="center">
+					<h1>DSCSDEC</h1>
+					<p>
+						<big><b>Quick Contact</b></big><br>
+						540 Dum Dum Road, Surermath, (Near Dum Dum Jn. Station),<br>
+						Kolkata-700074 West Bengal<br>
+						+91 33 2560 3889 +91 33 2560 3898<br> 
+						8902496652 / 9432011483 / 9073946884 <br>
+						www.dsec.ac.in<br>
+						info@dsec.ac.in<br>
+					</p>
+				</div>
+				<table style="width: 100%; text-align: center">
+					<tr>
+					<td>
+				<div class="py-5 ">
+					<img src="image/jis.png"width="120px"height="120px"class="mr-3 mt-3 rounded-circle">
+				</div>
+			</td>
+			<td>
+					<div class="py-5 ">
+					<img src="image/aicte.png"width="140px"height="120px"class="mr-3 mt-3 rounded-circle mx-auto d-block">
+				</div>
+			</td>
+			<td>
+					<div class="py-5 ">
+					<img src="image/wbut.png"width="140px"height="120px"class="mr-3 mt-3 rounded-circle aling-center">
+				</div>
+			</td>
+			<td>
+						<div class="py-5 ">
+					<img src="image/nptel.png"width="120px"height="120px"class="mr-3 mt-3 rounded-circle">
+				</div>
+			</td>
+		
+			<br>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+				
+
+<hr>
+			</section>
+			 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
